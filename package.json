@@ -1,0 +1,19 @@
+{
+  "name": "@f/create-event",
+  "description": "Create a DOM event",
+  "repository": "git://github.com/micro-js/create-event.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
+  "dependencies": {
+    "@f/event-constructors": "^1.0.0"
+  },
+  "devDependencies": {
+    "hihat": "^2.6.4",
+    "tap-dev-tool": "^1.3.0",
+    "tape": "^4.4.0"
+  }
+}
