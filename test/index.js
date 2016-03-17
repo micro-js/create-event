@@ -17,6 +17,19 @@ test('should work', function (t) {
   check(t, 'resize', true)
 })
 
+test('should polyfill', function (t) {
+  const which = createEvent('keypress', {which: 27})
+  const keyCode = createEvent('keypress', {keyCode: 27})
+
+  t.equal(keyCode.keyCode, 27)
+  t.equal(keyCode.which, 27)
+
+  t.equal(which.keyCode, 27)
+  t.equal(which.which, 27)
+
+  t.end()
+})
+
 /**
  * Helpers
  */
