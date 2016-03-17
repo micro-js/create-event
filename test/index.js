@@ -21,9 +21,11 @@ test('should polyfill', function (t) {
   const which = createEvent('keypress', {which: 27})
   const keyCode = createEvent('keypress', {keyCode: 27})
 
+  t.equal(keyCode.type, 'keypress')
   t.equal(keyCode.keyCode, 27)
   t.equal(keyCode.which, 27)
 
+  t.equal(which.type, 'keypress')
   t.equal(which.keyCode, 27)
   t.equal(which.which, 27)
 
