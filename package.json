@@ -2,7 +2,7 @@
   "name": "@f/create-event",
   "description": "Create a DOM event",
   "repository": "git://github.com/micro-js/create-event.git",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
